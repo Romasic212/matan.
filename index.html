@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Матан колоквиум</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+</head>
+
+<body>
+<div class="tema-trig-block">
+    <div class="tema-trig-header"><h1>Тригонометрия</h1></div>
+    <div class="tema-trig-content">
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+    <button id="theme-toggle">Переключить тему</button>
+    <div class="tema-block">
+        <div class="tema-header"><h1>Комплексные числа</h1></div>
+        <div class="tema-content">
+
+
+    <div class="topic-block">
+        <div class="topic-header">1) Определение комплексного числа</div>
+        <div class="topic-content">
+            <p>Комплексное число — это число, которое может быть представлено в виде <code>z = a + bi</code>, где <code>a</code> и <code>b</code> — действительные числа, <code>i</code> — мнимая единица, удовлетворяющая условию
+                <code>i² = -1</code>. Здесь <code>a</code> называется действительной частью комплексного числа, а <code>b</code> — мнимой частью. Комплексные числа позволяют решать уравнения, которые не имеют решений в области действительных чисел, например, уравнение
+                <code>x² + 1 = 0</code>.</p>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">2) Алгебраическая форма записи комплексного числа</div>
+        <div class="topic-content">
+            <p>Алгебраическая форма записи комплексного числа выглядит как <code>z = a + bi</code>, где:</p>
+            <ul>
+                <li><p><code>a</code> — действительная часть,</p></li>
+                <li><p><code>b</code> — мнимая часть.</p></li>
+            </ul>
+            <p>Пример: <code>z₁ = 3 + 4i</code> (где <code>a = 3</code>, <code>b = 4</code>).</p>
+
+            <h3><p>Сопряженные комплексные числа:</p></h3>
+            <p>Сопряженное комплексное число к <code>z = a + bi</code> обозначается как <code>‾z</code> и равно <code>‾z = a - bi</code>.</p>
+            <p>Пример: Для <code>z = 3 + 4i</code>, сопряженное число будет <code>‾z = 3 - 4i</code>.</p>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">3) Действия с комплексными числами в алгебраической форме записи</div>
+        <div class="topic-content">
+            <ul>
+                <li><strong class="wite">Сложение:</strong><br>
+                    <code>z₁ + z₂ = (a₁ + b₁ i) + (a₂ + b₂ i) = (a₁ + a₂) + (b₁ + b₂)i</code></li>
+                <li><strong>Вычитание:</strong><br>
+                    <code>z₁ - z₂ = (a₁ + b₁ i) - (a₂ + b₂ i) = (a₁ - a₂) + (b₁ - b₂)i</code></li>
+                <li><strong>Умножение:</strong><br>
+                    <code>z₁ ⋅ z₂ = (a₁ + b₁ i)(a₂ + b₂ i) = (a₁ a₂ - b₁ b₂) + (a₁ b₂ + a₂ b₁)i</code></li>
+                <li><strong>Деление:</strong><br>
+                    <code>z₁ / z₂ = (a₁ + b₁ i) / (a₂ + b₂ i) ⋅ (a₂ - b₂ i) / (a₂ - b₂ i) = (a₁ a₂ + b₁ b₂) + (b₁ a₂ - a₁ b₂)i / a₂² + b₂²</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">4) Модуль и аргумент комплексного числа</div>
+        <div class="topic-content">
+            <ul>
+                <li><strong>Модуль комплексного числа <code>z = a + bi</code> определяется как:</strong><br>
+                    <code>|z| = √(a² + b²)</code></li>
+                <li><strong>Аргумент комплексного числа:</strong><br>
+                    Аргумент комплексного числа — это угол <code>θ</code>, который образует вектор, соответствующий комплексному числу, с положительной осью абсцисс. Он может быть найден по формуле:<br>
+                    <code>θ = tan⁻¹((b / a))</code></li>
+            </ul>
+            <p><strong>Геометрическое изображение:</strong> Комплексное число можно представить на комплексной плоскости (плоскости Оxy), где ось абсцисс соответствует действительной части, а ось ординат — мнимой части.</p>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">5) Натуральная степень числа i</div>
+        <div class="topic-content">
+            <ul>
+                <li><code>i⁰ = 1</code></li>
+                <li><code>i¹ = i</code></li>
+                <li><code>i² = -1</code></li>
+                <li><code>i³ = -i</code></li>
+                <li><code>i⁴ = 1</code></li>
+            </ul>
+            <p><strong>Периодичность:</strong> Степени числа <code>i</code> повторяются каждые 4: <code>iⁿ = i^(n (mod 4))</code>.</p>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">6) Решение квадратных уравнений с отрицательным дискриминантом</div>
+        <div class="topic-content">
+            <p>Квадратное уравнение имеет вид: <code>ax² + bx + c = 0</code></p>
+            <p>Дискриминант определяется как: <code>D = b² - 4ac</code></p>
+            <p>Если <code>D &lt; 0</code>, то уравнение имеет два комплексных корня:</p>
+            <code>x_(1,2) = -b ± √(D) / 2a = -b ± i√(-D) / 2a</code>
+
+            <h3>Пример:</h3>
+            <p>Решим уравнение <code>x² + 4x + 5 = 0</code>:</p>
+            <ul>
+                <li>Здесь <code>a = 1</code>, <code>b = 4</code>, <code>c = 5</code>.</li>
+                <li>Дискриминант: <code>D = 4² - 4*1*5 = 16 - 20 = -4 &lt; 0</code>.</li>
+                <li>Корни: <code>x_(1,2) = -4 ± i√(4) / 2 = -2 ± i</code>.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">7) Тригонометрическая форма записи комплексного числа</div>
+        <div class="topic-content">
+            <p>Тригонометрическая форма записи комплексного числа выглядит так: <code>z = r(cos(θ) + isin(θ))</code> где:</p>
+            <ul>
+                <li><code>r = |z| = √(a² + b²)</code> — модуль,</li>
+                <li><code>θ = arg(z) = tan⁻¹((b/a))</code> — аргумент.</li>
+            </ul>
+
+            <h3>Действия с комплексными числами в тригонометрической форме:</h3>
+            <ul>
+                <li><strong>Сложение:</strong> Необходимо преобразовать в алгебраическую форму.</li>
+                <li><strong>Умножение:</strong><br>
+                    <code>z₁ z₂ = r₁ r₂ (cos(θ₁ + θ₂) + isin(θ₁ + θ₂))</code></li>
+                <li><strong>Деление:</strong><br>
+                    <code>z₁ / z₂ = r₁ / r₂ (cos(θ₁ - θ₂) + isin(θ₁ - θ₂))</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic-block">
+        <div class="topic-header">8) Показательная форма записи комплексного числа</div>
+        <div class="topic-content">
+            <p>Показательная форма записи комплексного числа выражается как: <code>z = reⁱᶿ</code> где:</p>
+            <ul>
+                <li><code>r = |z|</code>,</li>
+                <li><code>θ = arg(z)</code>.</li>
+            </ul>
+
+            <h3>Действия в показательной форме:</h3>
+            <ul>
+                <li><strong>Сложение:</strong> Необходимо преобразовать в алгебраическую форму.</li>
+                <li><strong>Умножение:</strong><br>
+                    <code>z₁ z₂ = r₁ r₂ e^(i(θ₁ + θ₂))</code></li>
+                <li><strong>Деление:</strong><br>
+                    <code>z₁ / z₂ = r₁ / r₂ e^(i(θ₁ - θ₂))</code></li>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    <script src="./core.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
